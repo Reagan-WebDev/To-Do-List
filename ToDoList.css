@@ -7,16 +7,13 @@
 h1 {
     color: blue;
     margin-bottom: 20px;
+    text-align: center;
 }
 h1 img {
     width: 30px;
     height: 30px;
 }
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     margin-top: 20px;
     background-color: lightblue;
     padding: 20px;
@@ -51,9 +48,10 @@ h1 img {
     background-color: darkblue;
 }
 ul li {
-    list-style-type: none;
-    margin-top: 20px;
-    padding: 10px;
+    margin-left: 20px; 
+    list-style-type: none; 
+    margin-top: 20px; 
+    padding: 10px; 
     position: relative;
 }
 
@@ -65,6 +63,9 @@ ul li::before {
     border-radius: 50%;
     background-image: url('images/circle.jpg');
     background-size: cover;
+    background-position: center;
+    border: none;
+    outline: none;
     left: -10px;
     top: 10px;
 }
@@ -74,4 +75,22 @@ ul li.checked {
 }
 ul li.checked::before {
     background-image: url('images/checked.jpg');
+}
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: blue;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover {
+    background-color:white;
 }
